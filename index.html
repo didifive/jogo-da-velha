@@ -11,54 +11,66 @@
 
 <body>
 
-<h1>
-    Jogo da Velha
-</h1>
+    <header>
+        <nav>
+            <ul>
+                <li class="title">
+                    Jogo da Velha
+                </li>
+                <li>
+                    <a id="reiniciar" href="#" onclick="reiniciar();">
+                        <span class="icon">
+                            <i class="fas fa-redo-alt"></i>
+                            Reiniciar
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-<div>
-    <div id="1" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
-    <div id="2" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
-    <div id="3" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
-</div>
+    <main>
+        <div class="game">
+            <div>
+                <div id="1" class="quadrado" onclick="escolherQuadrado(this)">-</div>
+                <div id="2" class="quadrado" onclick="escolherQuadrado(this)">-</div>
+                <div id="3" class="quadrado" onclick="escolherQuadrado(this)">-</div>
+            </div>
+            <div>
+                <div id="4" class="quadrado" onclick="escolherQuadrado(this)">-</div>
+                <div id="5" class="quadrado" onclick="escolherQuadrado(this)">-</div>
+                <div id="6" class="quadrado" onclick="escolherQuadrado(this)">-</div>
+            </div>
+            <div>
+                <div id="7" class="quadrado" onclick="escolherQuadrado(this)">-</div>
+                <div id="8" class="quadrado" onclick="escolherQuadrado(this)">-</div>
+                <div id="9" class="quadrado" onclick="escolherQuadrado(this)">-</div>
+            </div>
+        </div>
+        <div class="jogador">
+            <label id="jogador-selecionado"></label>
+        </div>
+        <div class="vencedor">
+            <label id="vencedor-selecionado"></label>
+        </div>
+    </main>
 
-<div>
-    <div id="4" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
-    <div id="5" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
-    <div id="6" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
-</div>
-
-<div>
-    <div id="7" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
-    <div id="8" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
-    <div id="9" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
-</div>
-
-<div class="jogador">
-    <label>
-        Jogador:
-    </label>
-    <label id="jogador-selecionado">
-
-    </label>
-</div>
-
-<div class="vencedor">
-    <label>
-        Vencedor:
-    </label>
-    <label id="vencedor-selecionado">
-
-    </label>
-</div>
-
-<div>
-    <button onclick="reiniciar()">
-        Reiniciar
-    </button>
-</div>
+    <footer>
+        <p>Projeto criado para fins de aprendizagem.</p>
+        <p>
+            Fonte do projeto no GitHub: 
+            <a 
+                href="https://github.com/didifive/jogo-da-velha"
+                target="_blank"
+            >
+               didifive/jogo-da-velha
+            </a>
+        </p>
+    </footer>
 
 </body>
 
 <script src="velha.js"></script>
+<script src="https://kit.fontawesome.com/5eed12a441.js" crossorigin="anonymous"></script>
 
 </html>
